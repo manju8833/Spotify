@@ -1,0 +1,53 @@
+/*
+Theme Name: Spotify GUI
+Theme URI: https://yourwebsite.com
+Author: Manjunath
+Author URI: https://yourwebsite.com
+Description: A custom WordPress theme designed to resemble the Spotify GUI.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: spotify-gui
+*/
+/* Global Styles */
+
+.song-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.song-item h3 {
+    margin: 10px 0;
+}
+
+.song-item p {
+    color: #bbb;
+}
+
+.play-btn {
+    background-color: #1DB954;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-btn:hover {
+    background-color: #1ed760;
+}
+
+.play-btn:active {
+    background-color: #1aa34b;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .song-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
